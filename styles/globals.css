@@ -1,5 +1,4 @@
 
-/****/
 body{
   background-color: #f2f2f2;
 
@@ -43,9 +42,7 @@ body{
 }
 /*NFTCard*/
 
-/* NFTCard.css */
-/* Add this CSS to your stylesheet */
-/* NFTCard.css */
+
 
 
 .nft-card {
@@ -61,15 +58,15 @@ body{
 
 .nft-image-container {
   position: relative;
-  text-align: center; /* Center-align the content within the container */
-  transition: transform 0.3s; /* Add a smooth transition effect for zooming */
+  text-align: center; 
+  transition: transform 0.3s; 
 }
 
 .nft-image {
   max-width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.3s; /* Add a smooth transition effect for zooming */
+  transition: transform 0.3s; 
 }
 
 .nft-title {
@@ -81,14 +78,14 @@ body{
   padding: 5px;
   font-size: 14px;
   border-radius: 4px;
-  transition: background-color 0.3s; /* Add a smooth transition effect for background color */
+  transition: background-color 0.3s; 
 }
 
 .buy-button,
 .sell-button {
   position: absolute;
   bottom: 10px;
-  width: 45%; /* Set a width for the buttons */
+  width: 45%; 
   background-color: #039BE5;
   color: #fff;
   border: none;
@@ -96,15 +93,15 @@ body{
   padding: 6px 12px;
   cursor: pointer;
   font-size: 14px;
-  transition: background-color 0.3s; /* Add a smooth transition effect for button background color */
+  transition: background-color 0.3s; 
 }
 
 .buy-button {
-  left: 10px; /* Adjust the left position */
+  left: 10px; 
 }
 
 .sell-button {
-  right: 10px; /* Adjust the right position */
+  right: 10px; 
 }
 
 .buy-button:hover,
@@ -112,11 +109,43 @@ body{
   background-color: #0572A3;
 }
 
-/* Add hover effect for zooming in the image and changing the background color */
 .nft-card:hover .nft-image-container {
   transform: scale(1.1);
 }
 
 .nft-card:hover .nft-title {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* NFTCard.css */
+
+
+.loading-dots {
+  font-size: 38px; 
+  font-weight: bold; 
+  display: inline-block;
+}
+
+.loading-dots::after {
+  content: ' ';
+  animation: loading 1s steps(5, end) infinite;
+}
+
+@keyframes loading {
+  0% {
+    content: '';
+  }
+   100% {
+    content: ' . . .';
+  }
+  25% {
+    content: '.';
+  }
+  50% {
+    content: '. .';
+  }
+  75% {
+    content: '. . . ';
+  }
 }

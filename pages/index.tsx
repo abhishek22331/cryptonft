@@ -38,16 +38,17 @@ const nftDataArray = [
     title: "Ferrari 6 ",
     price: 10,
   },
-   {
+  {
     imageUrl: "/car36.avif",
     title: "Ferrari 7",
     price: 10,
-  }, {
+  },
+  {
     imageUrl: "/car37.avif",
     title: "Ferrari 8",
     price: 10,
   },
-  
+
   {
     imageUrl: "/car38.avif",
     title: "Ferrari 9",
@@ -142,14 +143,14 @@ export default function Home() {
       {data && data.address.length > 0 ? (
         <div className="connected">
           <div>Address: {data.address}</div>
-          {/* <button onClick={disconnectHandler}>Disconnect</button> */}
         </div>
       ) : (
         <div className="not-connected">
           <button id="connect-button" onClick={btnhandler}>
             Connect with MetaMask
           </button>
-          <h1>Waiting for connection...</h1>
+          <div className="loading-dots">Waiting for connection
+          </div>
         </div>
       )}
       <div className="nft-grid">
@@ -158,7 +159,6 @@ export default function Home() {
           <NFTCard key={index} {...nftData} />
         ))}
       </div>
-      
     </div>
   );
 }
