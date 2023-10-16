@@ -10,47 +10,47 @@ interface DataState {
 const nftDataArray = [
   {
     imageUrl: "/car30.avif",
-    title: "Ferrari755757 1",
+    title: "Ferrari 1",
     price: 10,
   },
   {
     imageUrl: "/car31.avif",
-    title: "Ferrari755757 2",
+    title: "Ferrari 2",
     price: 10,
   },
   {
     imageUrl: "/car32.avif",
-    title: "Ferrari755757 3",
+    title: "Ferrari 3",
     price: 10,
   },
   {
     imageUrl: "/car33.avif",
-    title: "Ferrari755757 4",
+    title: "Ferrari 4",
     price: 10,
   },
   {
     imageUrl: "/car34.avif",
-    title: "Ferrari755757 5",
+    title: "Ferrari 5",
     price: 10,
   },
   {
     imageUrl: "/car35.avif",
-    title: "Ferrari755757 6 ",
+    title: "Ferrari 6 ",
     price: 10,
   },
    {
     imageUrl: "/car36.avif",
-    title: "Ferrari755757 7",
+    title: "Ferrari 7",
     price: 10,
   }, {
     imageUrl: "/car37.avif",
-    title: "Ferrari755757 8",
+    title: "Ferrari 8",
     price: 10,
   },
   
   {
     imageUrl: "/car38.avif",
-    title: "Ferrari755757 9",
+    title: "Ferrari 9",
     price: 20,
   },
   // Add more NFT data objects as needed
