@@ -2,7 +2,7 @@ import { ethers } from "ethers";
 import { useState, useEffect } from "react";
 import NFTCard from "@/component/NFT";
 // import cars from "../public/cars.png";
-
+import Navbar from "@/component/Navbar";
 interface DataState {
   address: string;
   Balance: string | null;
@@ -139,26 +139,10 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container">
-      {data && data.address.length > 0 ? (
-        <div className="connected">
-          <div>Address: {data.address}</div>
-        </div>
-      ) : (
-        <div className="not-connected">
-          <button id="connect-button" onClick={btnhandler}>
-            Connect with MetaMask
-          </button>
-          <div className="loading-dots">Waiting for connection
-          </div>
-        </div>
-      )}
-      <div className="nft-grid">
-        {nftDataArray.map((nftData, index) => (
-          //@ts-ignore
-          <NFTCard key={index} {...nftData} />
-        ))}
-      </div>
-    </div>
+    <>
+      <Navbar />
+
+      <NFTCard />
+    </>
   );
 }

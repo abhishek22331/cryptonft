@@ -1,151 +1,672 @@
 
-body{
-  background-color: #f2f2f2;
-
-}
-.container {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  text-align: center;
-  padding: 20px;
+body {
+  background: linear-gradient(to bottom, #121810, #332038, #29241f) !important;
 }
 
-.connected {
-  background-color: #5BC0DE; 
-  padding: 10px;
-  border-radius: 5px;
+
+.NFTHeader{
+  width: 100%;
+  height: 80px;
+  background: #555960;
+  border: 1px !important;
+}
+.ConntBTN {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 80px;
+  
+}
+.ConntBTN button {
+  background: #8c8e9f;
+  color: #fff;
+  border: 0;
+  padding: 10px 25px;
+  border-radius: 5px 15px;
+}
+.ConntBTN button:hover {
+  opacity: 0.7;
+}
+
+/* top section start  */
+
+.NFT_Main_Page {
+  background-image: url(../public/car37.avif);
+  background-repeat: no-repeat;
+  background-size: 100% 42%
+}
+
+.Main_NFT {
+  height: 100vh;
+  padding: 100px 0;
+  background: url();
+  background-repeat: no-repeat;
+  background-size: 62% 100%;
+  background-position: 100%
+}
+
+.topNftHeading h2 {
+  font-size: 60px!important;
+  color: #f8f9fa;
+  text-align: left;
+  line-height: 70px!important
+}
+
+.topNftHeading h2 span {
+  font-size: 15px;
+  background: linear-gradient(90deg,#12cfa7 0,#3eccae)!important;
+  -webkit-background-clip: text!important;
+  -webkit-text-fill-color: transparent!important;
+  display: block;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600
+}
+
+.topNftpara p {
+  color: #a3a7af!important;
+  font-size: 22px!important;
+  line-height: 31px!important;
+  font-weight: 100!important;
+  padding: 25px 0
+}
+
+.nftSlideCard {
+  width: 250px;
+  height: auto
+}
+
+.nftSlideCard img {
+  width: 100%;
+  height: auto
+}
+
+.TopNftrate {
+  padding: 150px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 75%
 }
 
-.not-connected {
+.rateDiv {
+  position: relative;
+  display: inline-block
+}
+
+.rateDiv:after {
+  position: absolute;
+  content: " ";
+  width: 30%;
+  height: 2px;
+  left: 0;
+  top: -10px;
+  background: linear-gradient(90deg,#12cfa7 0,#3eccae)!important
+}
+
+.rateDiv h4 {
+  color: #d1f0db;
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 100%
+}
+
+.rateDiv h6 {
+  color: #a3a7af;
+  font-size: 17px;
+  font-weight: 600
+}
+
+.NFTcardButton {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px
+}
+
+.RytTopNFT {
+  width: 100%
+}
+
+.NftSlider .carousel.slide {
+  width: 100%;
+  max-width: 415px;
+  height: 650px;
+  margin: 0 auto;
+  position: relative
+}
+
+.NftSlider .carousel.slide:after {
+  content: "";
+  position: absolute;
+  background: url();
+  background-size: 100% 100%;
+  top: -50px;
+  left: -82px;
+  width: 180px;
+  height: 180px
+}
+
+.Sliderbanner {
+  position: relative;
+  width: 415px;
+  height: 610px;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 12px
+}
+
+.Sliderbanner:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../public/car35.avif) no-repeat top;
+  background-size: 100% 100%;
+  overflow: hidden;
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(40px);
+  z-index: -9;
+  transform: scale(1.2);
+  background-repeat: no-repeat
+}
+
+.Nftsliderimage img {
+  width: 100%;
+  height: 100%;
+  max-height: 490px;
+  object-fit: cover;
+  border-radius: 35px
+}
+
+.nftslidetext {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0
+}
+
+.lft {
+  text-align: left
+}
+
+.lft,.ryt {
   display: flex;
   flex-direction: column;
+  gap: 15px
+}
+
+.ryt {
+  text-align: right
+}
+
+.lft h4,.ryt h4 {
+  color: #f8f9fa;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 100%
+}
+
+.lft p,.ryt p {
+  color: #f8f9fa!important;
+  font-size: 14px!important;
+  font-weight: 400!important;
+  margin-bottom: 0!important;
+  line-height: 100%!important
+}
+
+.NftSlider .carousel-control-prev-icon {
+  background-image: url(/_next/static/media/nftLeft.efaea079.png)!important
+}
+
+.NftSlider .carousel-control-next-icon,.NftSlider .carousel-control-prev-icon {
+  background-repeat: no-repeat!important;
+  background-size: 100% 100%!important;
+  width: 35px!important;
+  height: 35px!important
+}
+
+.NftSlider .carousel-control-next-icon {
+  background-image: url(/_next/static/media/nftRight.a68aa22d.png)!important
+}
+
+.NftSlider .carousel-control-prev {
+  left: 30%;
+  bottom: -25px;
+  top: inherit
+}
+
+.NftSlider .carousel-control-next {
+  bottom: -25px;
+  top: inherit;
+  right: 30%
+}
+
+.NftSlider .carousel-control-next-icon,.NftSlider .carousel-control-prev-icon,.NftSlider.carousel-control-prev-icon {
+  display: block!important
+}
+
+.NftSlider .carousel-indicators {
+  display: none
+}
+
+.TrendingDrops {
+  padding: 100px 0
+}
+
+.trendHead {
+  display: flex;
+  justify-content: center
+}
+
+.trendHead h2 {
+  display: flex;
   align-items: center;
-  margin-top: 20px;
+  gap: 10px;
+  color: #f8f9fa;
+  font-weight: 600!important;
+  font-size: 39px!important;
+  line-height: 100%!important;
+  margin-bottom: 0
 }
 
-#connect-button {
-  background-color: #039BE5;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 10px 20px;
-  margin: 10px;
+.trendHead h2 img {
+  width: 48px;
+  height: auto
 }
 
-.car-image {
-  width: 300px; 
-  margin-top: 20px;
-}
-/*NFTCard*/
-
-
-
-
-.nft-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  width: 25.33%;
-  padding: 12px;
-  margin: 10px;
-  display: inline-block;
-  box-sizing: border-box;
+.TrendingDropsData {
+  display: grid;
+  grid-template-columns: 350px auto;
+  grid-gap: 35px;
+  padding: 55px 0 100px
 }
 
-.nft-image-container {
-  position: relative;
-  text-align: center; 
-  transition: transform 0.3s; 
-}
-
-.nft-image {
-  max-width: 100%;
+.TrddopinnerItems {
+  background: linear-gradient(#171c20,#171c20) padding-box,linear-gradient(180deg,#383e42,#171d20) border-box;
+  border-radius: 15px;
+  padding: 30px;
+  border: 2px solid transparent;
+  width: 100%;
+  max-width: 350px;
   height: auto;
-  display: block;
-  transition: transform 0.3s; 
+  display: flex;
+  flex-direction: column;
+  gap: 40px
 }
 
-.nft-title {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px;
-  font-size: 14px;
-  border-radius: 4px;
-  transition: background-color 0.3s; 
+.TrddopinnerItems:hover {
+  background: linear-gradient(#171c20,#171c20) padding-box,linear-gradient(180deg,#3eccae,#183720) border-box
 }
 
-.buy-button,
-.sell-button {
-  position: absolute;
-  bottom: 10px;
-  width: 45%; 
-  background-color: #039BE5;
-  color: #fff;
+.ExplrCategories,.NFTType,.PriceRange {
+  display: flex;
+  flex-direction: column;
+  gap: 12px
+}
+
+.nftSidehead h4 {
+  color: #a3a7af;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 0
+}
+
+.rangeinpt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px
+}
+
+.rangeinpt input {
+  width: 100%;
+  background: transparent;
   border: none;
-  border-radius: 4px;
-  padding: 6px 12px;
+  border-bottom: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px;
+  color: #d3d3d3
+}
+
+.rangeinpt input::-webkit-inner-spin-button,.rangeinpt input::-webkit-outer-spin-button {
+  display: none
+}
+
+.rangeinpt input:focus-visible {
+  outline: 0 auto -webkit-focus-ring-color
+}
+
+.rangeinpt h6 {
+  color: #d3d3d3;
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: 0
+}
+
+
+
+
+
+
+
+.Ftcheckbox {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.Ftcheckbox label {
+  color: #fff;
+}
+
+
+/* TrendingDrops Cars */
+
+.TrendingDrops{
+  padding: 100px 0px;
+}
+.trendHead{
+  display: flex;
+  justify-content: center;
+}
+.trendHead h2{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f8f9fa;
+  font-weight: 600 !important;
+  font-size: 39px !important;
+  line-height: 100% !important;
+  margin-bottom: 0;
+}
+.trendHead h2 img{
+  width: 48px;
+  height: auto;
+}
+.TrendingDropsData{
+  display: grid;
+  grid-template-columns: 350px auto;
+  grid-gap: 35px;
+  padding: 55px 0px 100px 0px;
+}
+.TrddopinnerItems{
+  background: linear-gradient(#171c20, #171c20) padding-box,linear-gradient(to bottom, #383e42, #171d20) border-box;
+  border-radius: 15px;
+  padding: 30px;
+  border: 2px solid transparent;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.TrddopinnerItems:hover{
+  background: linear-gradient(#171c20, #171c20) padding-box, linear-gradient(to bottom, #3eccae, #183720) border-box;
+}
+.ExplrCategories,.NFTType , .PriceRange{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.nftSidehead h4{
+ color: #A3A7AF;
+ font-weight: 600;
+ font-size: 22px;
+ margin-bottom: 0;
+}
+.rangeinpt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+}
+.rangeinpt input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px;
+  color: #d3d3d3;
+}
+.rangeinpt input::-webkit-outer-spin-button,
+.rangeinpt input::-webkit-inner-spin-button {
+display: none;
+}
+.rangeinpt input:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+.rangeinpt h6{
+  color: #d3d3d3;
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.TrendDropItems2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  row-gap: 60px;
+}
+.NftTrendCard img{
+  width: 100% !important;
+  height: 400px !important;
+  border-radius: 24px;
+}
+/* .nftCardImage{
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 24px;
+
+} */
+.NftTrendCardsdsd:hover  {
+  position: relative;
+}
+.NftTrendCardsdsd{
+
+  border-radius: 24px !important;
+  width: 100% !important;
+  height: 400px !important;
+}
+.NftTrendCardsdsd {
+  border-radius: 24px !important;
+}
+.NftTrendCardsdsd:hover .nftcardHover {
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 20%;
+  z-index: 1;
+  transition: all 350ms cubic-bezier(0, 0, 0.2, 1);
+  display: flex;
+  border-radius: 24px 24px ;
+  align-items: center;
+  background: #171c2033;
+  backdrop-filter: blur(100px);
+}
+.nftcardHover{
+  position: absolute;
+  display: none;
+}
+.nfthovdata {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.nfthovitem h4 {
+  font-size: 16px !important;
+  color: #F8F9FA !important;
+  font-weight: 600 !important;
+  margin-bottom: 0;
+  line-height: 100% !important;
+}
+.nfthovitem p {
+  font-size: 15px !important;
+  color: #F8F9FA !important;
+  font-weight: 400 !important;
+  margin-bottom: 0;
+}
+.nft_grd {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+
+
+/* TrendingDrops Cars ended */
+
+
+
+
+
+
+/* Style for category checkboxes */
+.category-checkboxes label {
+  display: block;
+  margin-bottom: 5px;
   cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s; 
 }
 
-.buy-button {
-  left: 10px; 
+.category-checkboxes input[type="checkbox"] {
+  margin-right: 5px;
 }
 
-.sell-button {
-  right: 10px; 
+/* Style for NFT Type checkboxes */
+.nft-type-checkboxes label {
+  display: block;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
-.buy-button:hover,
-.sell-button:hover {
-  background-color: #0572A3;
+.nft-type-checkboxes input[type="checkbox"] {
+  margin-right: 5px;
 }
 
-.nft-card:hover .nft-image-container {
+
+.category-checkboxes label {
+  color: #fff;
+}
+
+/* Change text color to white for the Price Range and NFT Type headings */
+.PriceRange h4, .NFTType h4 {
+  color: white;
+}
+.TrendDropItems2 .common p {
+  color: white;
+}
+
+/* Reduce the size of images and div elements */
+/* Style the common container */
+.TrendDropItems2 .common {
+  display: inline-block;
+  margin: 10px;
+  text-align: center; /* Center content */
+}
+
+/* Style the item container */
+.item-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Style the image and adjust the size */
+.item-container img {
+  max-width: 200px; /* Increase the image size as needed */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.item-container:hover img {
   transform: scale(1.1);
 }
 
-.nft-card:hover .nft-title {
-  background-color: rgba(0, 0, 0, 0.8);
+/* Style the overlay */
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  opacity: 1; /* Always visible */
+}
+
+/* Style the name and rarity text */
+.name, .rarity {
+  margin: 5px 0;
+}
+
+/* Style the Buy button */
+.buy-button {
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.buy-button:hover {
+  background: #0056b3;
 }
 
 
-/* NFTCard.css */
-
-
-.loading-dots {
-  font-size: 38px; 
-  font-weight: bold; 
-  display: inline-block;
+.avatar-container {
+  width: 80px; /* Adjust the size as needed */
+  height: 80px; /* Adjust the size as needed */
+  border-radius: 50%; /* Makes it circular */
+  overflow: hidden; /* Clips the image to the circle */
 }
 
-.loading-dots::after {
-  content: ' ';
-  animation: loading 1s steps(5, end) infinite;
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the entire image is visible */
 }
 
-@keyframes loading {
-  0% {
-    content: '';
-  }
-   100% {
-    content: ' . . .';
-  }
-  25% {
-    content: '.';
-  }
-  50% {
-    content: '. .';
-  }
-  75% {
-    content: '. . . ';
-  }
+/* Add margin to create gaps between buttons */
+.conn_wallet {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+/* Align buttons to the left */
+.left-buttons {
+  text-align: left;
+}
+
+.Main_NFT {
+  border-top: 2px solid #076464; /* You can change the color to your preference */
+  padding-top: 20px; /* Adjust the padding as needed */
+}
+
+.ConntBTN {
+  display: flex;
+  align-items: center;
+}
+
+select#cars,
+input#searchInput {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+select#cars:focus,
+input#searchInput:focus {
+  outline: none;
+  border-color: #007bff;
 }
