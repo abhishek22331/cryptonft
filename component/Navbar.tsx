@@ -86,13 +86,26 @@ const Navbar: React.FC = () => {
     }
   }, []);
   console.log(data,"dddddatatatta")
-  return (
-    <div>
-      <section className="NFTHeader">
+  return (<>
+    <header>
+    <nav className="navbar navbar-expand-lg nav-trans-bdr">
         <div className="container">
-          <div className="ConntBTN">
-            <div className="left-buttons">
-              <select name="cars" id="cars">
+          <a className="navbar-brand" href=""> <img alt="logo" loading="lazy" src="./logo.webp" className="img-logo" /></a>
+         
+          <div className="collapse navbar-collapse" id="mynavbar">
+            <ul className="navbar-nav mx-auto">
+              <li className="nav-item">
+                <a className="nav-link" href="">Home</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="">Gov</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="">NFT</a>
+              </li>
+            </ul>
+            <div className="form-flex gap-2">
+            <select name="cars" id="cars" className="form-select">
                 <option value="disabled" disabled selected>
                   Select an option
                 </option>
@@ -102,23 +115,31 @@ const Navbar: React.FC = () => {
                 <option value="Limited Edition">Limited Edition</option>
                 <option value="Concept Cars">Concept Cars</option>
               </select>
-              <input type="text" id="searchInput" placeholder="Search..." />
-              <button className="conn_wallet">Home</button>
-              <button className="conn_wallet">NFT</button>
+              <input type="text" id="searchInput" placeholder="Search..." className="form-control" />
             </div>
-            {data.address?<span style={{color:"#21997f"}}>{data.address.slice(0,5)}....{data.address.slice(33,data.address.length)}</span>: <button className="conn_wallet" onClick={btnhandler}>Connect Wallet</button>}
-           
-            <div className="avatar-container">
+            
+            <div className="vs-mb">{data.address?<span style={{color:"#21997f"}}>{data.address.slice(0,5)}....{data.address.slice(33,data.address.length)}</span>:<button className="btn btn-primary btn-connect m-pos-chng-btn" type="button" onClick={btnhandler}>Connect Wallet</button>}</div>
+            
+          </div>
+          <div className="button-pos ms-auto"> <div className="vs-lg"> {data.address?<span style={{color:"#21997f"}}>{data.address.slice(0,5)}....{data.address.slice(33,data.address.length)}</span>:<button className="btn btn-primary btn-connect m-pos-chng-btn" type="button" onClick={btnhandler}>Connect Wallet</button>}</div>
+          <div className="avatar-container">
               <img
                 src="./profile.png"
                 alt="Your Avatar"
                 className="avatar-image"
               />
             </div>
+            <button className="navbar-toggler ms-auto pos-right" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span className="navbar-toggler-icon"></span>
+            </button>
           </div>
+         
         </div>
-      </section>
-    </div>
+      </nav>
+      
+</header>
+     
+    </>
   );
 };
 

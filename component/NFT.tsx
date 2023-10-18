@@ -3,18 +3,17 @@ import React from "react";
 const NFTCard: React.FC = () => {
   return (
     <>
-      <section className="Main_NFT">
+        <section className="Main_NFT">
         <div className="container">
-          <div className="nft_grd">
-            <div className="col_gd1">
-              <div className="leftTopNFT">
-                <div className="topNftHeading">
-                  <h2>
-                    <span>Explore and Acquire Exclusive NFTs</span> Own a Piece
-                    of Digital History
-                  </h2>
-                </div>
-                <div className="topNftpara">
+            <div className="nft_grd">
+                <div className="col_gd1">
+                    <div className="leftTopNFT">
+                        <div className="topNftHeading">
+                            <h2>
+                                <span>Explore and Acquire Exclusive NFTs</span> Own a Piece of Digital History
+                            </h2>
+                        </div>
+                        <div className="topNftpara">
                   <p>
                     Introducing our stunning "Sleek Supercar" NFT, a true
                     masterpiece in the world of digital art and luxury
@@ -23,7 +22,7 @@ const NFTCard: React.FC = () => {
                     automotive excellence, encapsulated in the form of a
                     non-fungible token (NFT).
                   </p>
-                  <ul style={{ color: "#a3a7af" }}>
+                  <ul className="list-m">
                     <li>
                       Impeccable Design: The Sleek Supercar is a fusion of
                       aerodynamic precision and aesthetic beauty, making it a
@@ -49,7 +48,7 @@ const NFTCard: React.FC = () => {
                 <div className="topNftButton">
                   <button
                     type="button"
-                    className="green_btn d-flex btn btn-primary"
+                    className="green-btn d-flex btn btn-primary"
                   >
                     CLAIM NFTS
                   </button>
@@ -71,9 +70,9 @@ const NFTCard: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="col_gd2">
-              <div className="RytTopNFT">
-                <div className="NftSlider">
+             <div className="col_gd2">
+                    <div className="RytTopNFT">
+                        <div className="NftSlider">
                   <div
                     id="nft-slide"
                     className="carousel slide"
@@ -146,14 +145,15 @@ const NFTCard: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#nft-slide" data-bs-slide="prev">
+					<button className="carousel-control-prev" type="button" data-bs-target="#nft-slide" data-bs-slide="prev">
                                     <i className="bi bi-arrow-left-circle"></i>
                                   </button>
                                   <button className="carousel-control-next" type="button" data-bs-target="#nft-slide" data-bs-slide="next">
                                     <i className="bi bi-arrow-right-circle"></i>
                                   </button>
+                  </div>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -238,247 +238,244 @@ const NFTCard: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <div className="TrendDropItems2">
-                <div className="NftTrendCard">
-                  <div className="NftTrendCardsdsd">
-                    <img
-                      width="300"
-                      height="400"
-                      decoding="async"
-                      data-nimg="1"
-                      className="nftCardImage"
-                      src="./car30.avif"
-                     // style=""
-                      loading="lazy"
-                    />
-                    <div className="nftcardHover">
-                      <div className="nfthovdata">
-                        <div className="nfthovitem">
-                          <h4>Clasic Car</h4>
-                          <p>Ferrari</p>
-                        </div>
-                        <div className="nfthovitem">
-                          <h4>100 Token</h4>
-                          <p><span>❤</span></p>
-                        </div>
-                      </div>
+            <div className="TrendDropItems2">
+                        <div className="NftTrendCard nft_item common">
+                            <div className="wrap-img">
+							<img
+							  width="300"
+							  height="400"
+							  decoding="async"
+							  data-nimg="1"
+							  className="nftCardImage"
+							  src="./car30.avif"
+							 // style=""
+							  loading="lazy"
+							/></div>
+                            <div className="nft_item_info">
+                                <h4>
+                                   Clasic Car <a href="">Ferrari
+                                </a></h4>
+                               
+                                <div className="nft_item_price">
+                                    Token: <span>100</span>
+                                </div>
+                                <div className="nft_item_like">
+                                    <i className="bi bi-heart"></i><span>80</span>
+                                </div>                                 
+                            </div>
+                            
+                          </div>
+                           <div className="NftTrendCard nft_item common">
+                            <div className="wrap-img">
+							<img
+							  width="300"
+							  height="400"
+							  decoding="async"
+							  data-nimg="1"
+							  className="nftCardImage"
+							  src="./car31.avif"
+							 // style=""
+							  loading="lazy"
+							/></div>
+                            <div className="nft_item_info">
+                                <h4>
+                                   Clasic Car <a href="">Ferrari
+                                </a></h4>
+                               
+                                <div className="nft_item_price">
+                                    Token: <span>100</span>
+                                </div>
+                                <div className="nft_item_like">
+                                    <i className="bi bi-heart"></i><span>80</span>
+                                </div>                                 
+                            </div>
+                            
+                          </div>
+                          <div className="NftTrendCard nft_item common">
+                            <div className="wrap-img">
+							<img
+							  width="300"
+							  height="400"
+							  decoding="async"
+							  data-nimg="1"
+							  className="nftCardImage"
+							  src="./car32.avif"
+							 // style=""
+							  loading="lazy"
+							/></div>
+                            <div className="nft_item_info">
+                                <h4>
+                                   Clasic Car <a href="">Ferrari
+                                </a></h4>
+                               
+                                <div className="nft_item_price">
+                                    Token: <span>100</span>
+                                </div>
+                                <div className="nft_item_like">
+                                    <i className="bi bi-heart"></i><span>80</span>
+                                </div>                                 
+                            </div>
+                            
+                          </div>
+                          <div className="NftTrendCard nft_item common">
+                            <div className="wrap-img">
+							<img
+							  width="300"
+							  height="400"
+							  decoding="async"
+							  data-nimg="1"
+							  className="nftCardImage"
+							  src="./car33.avif"
+							 // style=""
+							  loading="lazy"
+							/></div>
+                            <div className="nft_item_info">
+                                <h4>
+                                   Clasic Car <a href="">Ferrari
+                                </a></h4>
+                               
+                                <div className="nft_item_price">
+                                    Token: <span>100</span>
+                                </div>
+                                <div className="nft_item_like">
+                                    <i className="bi bi-heart"></i><span>80</span>
+                                </div>                                 
+                            </div>
+                            
+                          </div>
+                          <div className="NftTrendCard nft_item common">
+                            <div className="wrap-img">
+							<img
+							  width="300"
+							  height="400"
+							  decoding="async"
+							  data-nimg="1"
+							  className="nftCardImage"
+							  src="./car34.avif"
+							 // style=""
+							  loading="lazy"
+							/></div>
+                            <div className="nft_item_info">
+                                <h4>
+                                   Clasic Car <a href="">Ferrari
+                                </a></h4>
+                               
+                                <div className="nft_item_price">
+                                    Token: <span>100</span>
+                                </div>
+                                <div className="nft_item_like">
+                                    <i className="bi bi-heart"></i><span>80</span>
+                                </div>                                 
+                            </div>
+                            
+                          </div>
+                          <div className="NftTrendCard nft_item common">
+                            <div className="wrap-img">
+							<img
+							  width="300"
+							  height="400"
+							  decoding="async"
+							  data-nimg="1"
+							  className="nftCardImage"
+							  src="./car35.avif"
+							 // style=""
+							  loading="lazy"
+							/></div>
+                            <div className="nft_item_info">
+                                <h4>
+                                All <a href="">Ferrari Roma
+                                </a></h4>
+                               
+                                <div className="nft_item_price">
+                                    Token: <span>80</span>
+                                </div>
+                                <div className="nft_item_like">
+                                    <i className="bi bi-heart"></i><span>80</span>
+                                </div>                                 
+                            </div>
+                            
+                          </div>
                     </div>
-                  </div>
                 </div>
-                <div className="NftTrendCard">
-                  <div className="NftTrendCardsdsd">
-                    <img
-                      width="300"
-                      height="400"
-                      decoding="async"
-                      data-nimg="1"
-                      className="nftCardImage"
-                     // style=""
-                      src="./car31.avif"
-                      loading="lazy"
-                    />
-                    <div className="nftcardHover">
-                      <div className="nfthovdata">
-                        <div className="nfthovitem">
-                          <h4>Sport car</h4>
-                          <p>Ferrari Roma</p>
-                        </div>
-                        <div className="nfthovitem">
-                          <h4>20 Token</h4>
-                          <p><span>❤</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="NftTrendCard">
-                  <div className="NftTrendCardsdsd">
-                    <img
-                      width="300"
-                      height="400"
-                      decoding="async"
-                      data-nimg="1"
-                      className="nftCardImage"
-                     // style=""
-                      loading="lazy"
-                      src="./car32.avif"
-                    />
-                    <div className="nftcardHover">
-                      <div className="nfthovdata">
-                        <div className="nfthovitem">
-                          <h4>Ferrari F8 Tributo</h4>
-                          <p>Concept Cars</p>
-                        </div>
-                        <div className="nfthovitem">
-                          <h4>100 Token</h4>
-                          <p><span>❤</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="NftTrendCard">
-                  <div className="NftTrendCardsdsd">
-                    <img
-                      width="300"
-                      height="400"
-                      decoding="async"
-                      data-nimg="1"
-                      className="nftCardImage"
-                     // style=""
-                      loading="lazy"
-                      src="./car33.avif"
-                    />
-                    <div className="nftcardHover">
-                      <div className="nfthovdata">
-                        <div className="nfthovitem">
-                          <h4>Ferrari 296 GTS</h4>
-                          <p>Concept Cars</p>
-                        </div>
-                        <div className="nfthovitem">
-                          <h4>50 Token</h4>
-                          <p><span>❤</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="NftTrendCard">
-                  <div className="NftTrendCardsdsd">
-                    <img
-                      width="300"
-                      height="400"
-                      decoding="async"
-                      data-nimg="1"
-                      className="nftCardImage"
-                     // style=""
-                      loading="lazy"
-                      src="./car34.avif"
-                    />
-                    <div className="nftcardHover">
-                      <div className="nfthovdata">
-                        <div className="nfthovitem">
-                          <h4>Ferrari Purosangue SUV</h4>
-                          <p>Sports</p>
-                        </div>
-                        <div className="nfthovitem">
-                          <h4>50 Token</h4>
-                          <p><span>❤</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="NftTrendCard">
-                  <div className="NftTrendCardsdsd">
-                    <img
-                      width="300"
-                      height="400"
-                      decoding="async"
-                      data-nimg="1"
-                      className="nftCardImage"
-                     // style=""
-                      loading="lazy"
-                      src="./car35.avif"
-                    />
-                    <div className="nftcardHover">
-                      <div className="nfthovdata">
-                        <div className="nfthovitem">
-                          <h4>Ferrari 812</h4>
-                          <p>All</p>
-                        </div>
-                        <div className="nfthovitem">
-                          <h4>80 Token</h4>
-                          <p><span>❤</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="NftTrendCard">
-                  <div className="NftTrendCardsdsd">
-                    <img
-                      width="300"
-                      height="400"
-                      decoding="async"
-                      data-nimg="1"
-                      className="nftCardImage"
-                     // style=""
-                      loading="lazy"
-                      src="./car36.avif"
-                    />
-                    <div className="nftcardHover">
-                      <div className="nfthovdata">
-                        <div className="nfthovitem">
-                          <h4>Ferrari Purosangue</h4>
-                          <p>All</p>
-                        </div>
-                        <div className="nfthovitem">
-                          <h4>80 Token</h4>
-                          <p><span>❤</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="NftTrendCard">
-                  <div className="NftTrendCardsdsd">
-                    <img
-                      width="300"
-                      height="400"
-                      decoding="async"
-                      data-nimg="1"
-                      className="nftCardImage"
-                     // style=""
-                      loading="lazy"
-                      src="./car37.avif"
-                    />
-                    <div className="nftcardHover">
-                      <div className="nfthovdata">
-                        <div className="nfthovitem">
-                          <h4>Ferrari GTC4 Lusso</h4>
-                          <p>All</p>
-                        </div>
-                        <div className="nfthovitem">
-                          <h4>80 Token</h4>
-                          <p><span>❤</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="NftTrendCard">
-                  <div className="NftTrendCardsdsd">
-                    <img
-                      width="300"
-                      height="400"
-                      decoding="async"
-                      data-nimg="1"
-                      className="nftCardImage"
-                     // style=""
-                      loading="lazy"
-                      src="./car38.avif"
-                    />
-                    <div className="nftcardHover">
-                      <div className="nfthovdata">
-                        <div className="nfthovitem">
-                          <h4>Ferrari Roma</h4>
-                          <p>All</p>
-                        </div>
-                        <div className="nfthovitem">
-                          <h4>80 Token</h4>
-                          <p><span>❤</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            </div>
+       
+    </section>
+    <section className="exploreMore">
+    <div className="container">
+          <div className="trendHead">
+            <h2>Explore More</h2>
+          </div>
+          <div className="explore_d-grid">
+            <div className="explore-card">
+              <img src="./carnf12.jpg" alt="ferrari"/>
+              <div className="info">
+                Ferrai12
+              </div>
+            </div>
+            <div className="explore-card">
+              <img src="./carnf12.jpg" alt="ferrari"/>
+              <div className="info">
+                Ferrai12
+              </div>
+            </div>
+            <div className="explore-card">
+              <img src="./carnft2.jpg" alt="ferrari"/>
+              <div className="info">
+                Ferrai12
+              </div>
+            </div>
+            <div className="explore-card">
+              <img src="./carnft6.jpg" alt="ferrari"/>
+              <div className="info">
+                Ferrai12
+              </div>
+            </div>
+            <div className="explore-card">
+              <img src="./carnft8.jpg" alt="ferrari"/>
+              <div className="info">
+                Ferrai12
               </div>
             </div>
           </div>
-        </div>
-      </section>
+    </div>
+    </section>
+    <section className="footer">
+        <div className="container">
+          <div className="inner_footer">
+                <div className="big_btn_row aos-init aos-animate" data-aos="fade-left" data-aos-duration="3000">
+                  <span><a href="#">Terms and Conditions</a></span>
+                  <span><a href="#">Privacy Policy</a></span>
+                  <span><a href="#">Cookies Policy</a></span>
+                </div>
+          </div>
+          
+          </div>
+          <div className="subfooter" >
+                <div className="container" >
+                    <div className="row" >
+                        <div className="col-md-12" >
+                            <div className="de-flex" >
+                                <div className="de-flex-col" >
+                                    <a href="">
+                                        <img alt="" className="img-logo" src="./logo.webp"  />
+                                    </a>
+
+                                </div>
+                                <div className="de-flex-col" >
+                                    <div className="social-icons" >
+                                        <a href="#"><i className="bi bi-facebook bi-lg"></i></a>
+                                        <a href="#"><i className="bi bi-twitter bi-lg"></i></a>
+                                        <a href="#"><i className="bi bi-linkedin bi-lg"></i></a>
+                                        <a href="#"><i className="bi bi-pinterest bi-lg"></i></a>
+                                        <a href="#"><i className="bi bi-rss bi-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>   
     </>
   );
 };
