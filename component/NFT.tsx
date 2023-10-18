@@ -457,7 +457,7 @@ const NFTCard: React.FC = () => {
                             <div className="de-flex" >
                                 <div className="de-flex-col" >
                                     <a href="">
-                                        <img alt="" className="img-logo" src="./logo.webp"  />
+                                        <img alt="" className="img-logo" src="./logo.png"  />
                                     </a>
 
                                 </div>

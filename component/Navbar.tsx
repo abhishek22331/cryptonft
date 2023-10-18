@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
     <header>
     <nav className="navbar navbar-expand-lg nav-trans-bdr">
         <div className="container">
-          <a className="navbar-brand" href=""> <img alt="logo" loading="lazy" src="./logo.webp" className="img-logo" /></a>
+          <a className="navbar-brand" href=""> <img alt="logo" loading="lazy" src="./logo.png" className="img-logo" /></a>
          
           <div className="collapse navbar-collapse" id="mynavbar">
             <ul className="navbar-nav mx-auto">
