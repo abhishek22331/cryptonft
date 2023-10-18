@@ -148,6 +148,12 @@ const NFTCard: React.FC = () => {
                     </div>
                   </div>
                 </div>
+                <button className="carousel-control-prev" type="button" data-bs-target="#nft-slide" data-bs-slide="prev">
+                                    <i className="bi bi-arrow-left-circle"></i>
+                                  </button>
+                                  <button className="carousel-control-next" type="button" data-bs-target="#nft-slide" data-bs-slide="next">
+                                    <i className="bi bi-arrow-right-circle"></i>
+                                  </button>
               </div>
             </div>
           </div>

@@ -55,7 +55,8 @@ body {
 .topNftHeading h2 span {
   font-size: 15px;
   background: linear-gradient(90deg,#12cfa7 0,#3eccae)!important;
-  -webkit-background-clip: text!important;
+  background-clip: text !important; /* Standard */
+  -webkit-background-clip: text !important; /* Chrome, Safari 3 */
   -webkit-text-fill-color: transparent!important;
   display: block;
   line-height: 16px;
@@ -669,4 +670,734 @@ select#cars:focus,
 input#searchInput:focus {
   outline: none;
   border-color: #007bff;
+}
+
+
+/* Styling for carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  color: #fff;
+}
+
+/* Styling for the body and general elements */
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #727272;
+  word-spacing: 0;
+  background-color: #171c20;
+}
+
+a {
+  color: #fff;
+}
+
+a:link,
+a:visited {
+  color: #fff;
+}
+
+a:hover {
+  color: rgba(56, 205, 173, 1);
+}
+
+/* Styling for navigation */
+.nav-trans-bdr {
+  border-bottom: 1px solid cyan;
+  min-height: 80px;
+}
+
+#mynavbar .nav-link {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#mynavbar .nav-link:focus,
+.nav-link:hover {
+  color: rgba(56, 205, 173, 1);
+}
+
+.navbar-toggler {
+  color: #fff;
+  background-color: #12cfa7;
+  padding: 5px 8px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.button-pos {
+  position: relative;
+}
+
+.pos-right {
+  margin-left: 1rem !important;
+}
+
+.m-pos-chng-btn {
+  margin-left: auto;
+  position: relative;
+}
+
+.btn-connect,
+.green-btn {
+  background: rgba(56, 205, 173, 1);
+  border: 1px solid rgba(56, 205, 173, 1);
+  border-radius: 0;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.btn-connect:hover,
+.green-btn:hover {
+  color: #fff;
+  background-color: rgb(43, 151, 128);
+  border-color: rgb(43, 151, 128);
+}
+
+/* Styling for section_one */
+.nft_grd {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.Main_NFT {
+  height: 100vh;
+  padding: 100px 0px;
+  background: radial-gradient(closest-side at 70% 45%, rgba(0, 0, 0, 0), rgba(31, 209, 249, 0.1), rgb(182, 33, 254, 0.2), rgba(0, 0, 0, 0));
+  margin-bottom: 20px;
+}
+
+.topNftHeading h2 {
+  font-size: 60px !important;
+  color: #f8f9fa;
+  text-align: left;
+  line-height: 70px !important;
+}
+
+.topNftHeading h2 span {
+  font-size: 15px;
+  background: linear-gradient(to right, #12cfa7 0%, #3eccae 100%) !important;
+  background-clip: text !important; /* Standard */
+  -webkit-background-clip: text !important; /* Chrome, Safari 3 */
+  -webkit-text-fill-color: transparent !important;
+  display: block;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.topNftpara p {
+  color: #A3A7AF !important;
+  font-size: 22px !important;
+  line-height: 31px !important;
+  font-weight: 100 !important;
+  padding: 25px 0px;
+}
+
+.nftSlideCard {
+  width: 250px;
+  height: auto;
+}
+
+.nftSlideCard img {
+  width: 100%;
+  height: auto;
+}
+
+.TopNftrate {
+  padding: 100px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+
+.rateDiv {
+  position: relative;
+  display: inline-block;
+}
+
+.rateDiv::after {
+  position: absolute;
+  content: " ";
+  width: 30%;
+  height: 2px;
+  left: 0;
+  top: -10px;
+  background: linear-gradient(to right, #12cfa7 0%, #3eccae 100%) !important;
+}
+
+.rateDiv h4 {
+  color: #D1F0DB;
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.rateDiv h6 {
+  color: #A3A7AF;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.NFTcardButton {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+/* Styling for the right slider */
+.RytTopNFT {
+  width: 100%;
+}
+
+.NftSlider .carousel.slide {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-inner {
+  background: linear-gradient(45deg, black, transparent);
+  border-radius: 15px;
+}
+
+.Sliderbanner {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 20px 15px 20px 15px;
+}
+
+.Sliderbanner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient();
+  background-size: 100% 100%;
+  overflow: hidden;
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(40px);
+  z-index: -9;
+  transform: scale(1.2, 1.2);
+  background-repeat: no-repeat;
+}
+
+.Nftsliderimage img {
+  width: 100% !important;
+  height: auto;
+  border-radius: 35px;
+}
+
+.nftslidetext {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.lft {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ryt {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lft h4,
+.ryt h4 {
+  color: #F8F9FA;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 100%;
+}
+
+.lft p,
+.ryt p {
+  color: #A3A7AF;
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+/* Styling for section_two */
+.Main_NFT_Main {
+  padding: 0px 0px 100px 0px;
+  background: radial-gradient(closest-side at 70% 45%, rgba(0, 0, 0, 0), rgba(31, 209, 249, 0.1), rgba(182, 33, 254, 0.2), rgba(0, 0, 0, 0));
+}
+
+.Selling_NFT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding: 150px 0px 100px 0px;
+}
+
+.Sell_Left_text h2 {
+  font-size: 60px !important;
+  color: #F8F9FA;
+  line-height: 70px !important;
+  text-align: center;
+  width: 80%;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.Sell_Left_text p {
+  color: #A3A7AF !important;
+  font-size: 22px !important;
+  line-height: 30px !important;
+  text-align: center;
+  width: 70%;
+  font-weight: 100 !important;
+}
+
+.btn-bg {
+  background: linear-gradient(to right, #12cfa7 0%, #3eccae 100%);
+  background-clip: text !important; /* Standard */
+  -webkit-background-clip: text !important; /* Chrome, Safari 3 */
+  -webkit-text-fill-color: transparent;
+  font-size: 15px !important;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.Selling_NFT_Card {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0px;
+}
+
+.Card_selling {
+  padding: 0 10px;
+  position: relative;
+}
+
+.Card_selling::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  left: 0;
+  top: -10px;
+  background: linear-gradient(to right, #12cfa7 0%, #3eccae 100%) !important;
+}
+
+.Card_selling h5 {
+  color: #F8F9FA;
+  font-size: 20px !important;
+  line-height: 29px !important;
+  margin-bottom: 0;
+}
+
+.Card_selling h6 {
+  color: #A3A7AF !important;
+  font-size: 18px !important;
+  line-height: 29px !important;
+}
+
+.Selling_Card {
+  position: relative;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+.Selling_Card::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  left: 0;
+  top: -10px;
+  background: linear-gradient(to right, #12cfa7 0%, #3eccae 100%) !important;
+}
+
+.Selling_Card h6 {
+  color: #F8F9FA;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.Selling_Card h5 {
+  color: #A3A7AF !important;
+  font-size: 14px !important;
+  font-weight: 100 !important;
+  text-align: center;
+}
+
+/* Styling for section_three */
+.Slider_TopNFTs {
+  padding: 0px 0px 100px 0px;
+  background: radial-gradient(closest-side at 70% 45%, rgba(0, 0, 0, 0), rgba(31, 209, 249, 0.1), rgba(182, 33, 254, 0.2), rgba(0, 0, 0, 0));
+}
+
+.SliderTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  position: relative;
+  padding: 100px 0px;
+}
+
+.SliderLeft h2 {
+  font-size: 60px !important;
+  color: #F8F9FA;
+  text-align: left;
+  line-height: 70px !important;
+}
+
+.SliderLeft h2 span {
+  font-size: 15px;
+  background: linear-gradient(to right, #12cfa7 0%, #3eccae 100%) !important;
+  background-clip: text !important; /* Standard */
+  -webkit-background-clip: text !important; /* Chrome, Safari 3 */
+  -webkit-text-fill-color: transparent !important;
+  display: block;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.SliderRight {
+  padding-left: 100px;
+  width: 50%;
+}
+
+.SliderRight img {
+  max-width: 100%;
+  height: auto;
+}
+
+.SliderRight p {
+  color: #A3A7AF !important;
+  font-size: 22px !important;
+  line-height: 30px !important;
+  font-weight: 100 !important;
+}
+
+/* Styling for section_four */
+.NFT_Top {
+  padding: 100px 0px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.NFT_Top h2 {
+  font-size: 50px !important;
+  color: #f8f9fa;
+  text-align: center;
+  line-height: 70px !important;
+}
+
+.NFT_Top h2 span {
+  font-size: 15px;
+  background: linear-gradient(to right, #12cfa7 0%, #3eccae 100%) !important;
+  background-clip: text !important; /* Standard */
+  -webkit-background-clip: text !important; /* Chrome, Safari 3 */
+  -webkit-text-fill-color: transparent !important;
+  display: block;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.NFT_Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.NFT_Card {
+  padding: 20px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+.NFT_Card::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  left: 0;
+  top: -10px;
+  background: linear-gradient(to right, #12cfa7 0%, #3eccae 100%) !important;
+}
+
+.NFT_Card h6 {
+  color: #F8F9FA;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.NFT_Card h5 {
+  color: #A3A7AF !important;
+  font-size: 14px !important;
+  font-weight: 100 !important;
+  text-align: center;
+}
+
+.NFT_Button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.NFT_Button a {
+  background: linear-gradient(to right, #12cfa7 0%, #3eccae 100%) !important;
+  padding: 15px 30px;
+  border-radius: 15px;
+  color: #f8f9fa !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin-right: 20px;
+}
+
+/* Styling for section_five */
+.News {
+  padding: 100px 0px;
+  background: radial-gradient(closest-side at 70% 45%, rgba(0, 0, 0, 0), rgba(31, 209, 249, 0.1), rgba(182, 33, 254, 0.2), rgba(0, 0, 0, 0));
+}
+
+.News h2 {
+  font-size: 50px !important;
+  color: #f8f9fa;
+  text-align: center;
+  line-height: 70px !important;
+}
+
+.News h2 span {
+  font-size: 15px;
+  background: linear-gradient(to right, #12cfa7 0%, #3eccae 100%) !important;
+  background-clip: text !important; /* Standard */
+-webkit-background-clip: text !important; /* Chrome, Safari 3 */
+  -webkit-text-fill-color: transparent !important;
+  display: block;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.News_Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.News_Card {
+  position: relative;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+.News_Card::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  left: 0;
+  top: -10px;
+  background: linear-gradient(to right, #12cfa7 0%, #3eccae 100%) !important;
+}
+
+.News_Card h6 {
+  color: #F8F9FA;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.News_Card h5 {
+  color: #A3A7AF !important;
+  font-size: 14px !important;
+  font-weight: 100 !important;
+  text-align: center;
+}
+
+/* Styling for section_six */
+.FAQs {
+  padding: 100px 0px;
+  background: radial-gradient(closest-side at 70% 45%, rgba(0, 0, 0, 0), rgba(31, 209, 249, 0.1), rgba(182, 33, 254, 0.2), rgba(0, 0, 0, 0));
+}
+
+.FAQs h2 {
+  font-size: 50px !important;
+  color: #f8f9fa;
+  text-align: center;
+  line-height: 70px !important;
+}
+
+.FAQs h2 span {
+  font-size: 15px;
+  background: linear-gradient(to right, #12cfa7 0%, #3eccae 100%) !important;
+  background-clip: text !important; /* Standard */
+  -webkit-background-clip: text !important; /* Chrome, Safari 3 */
+  -webkit-text-fill-color: transparent !important;
+  display: block;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.FAQ_Accordion {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.FAQ_Card {
+  margin-bottom: 20px;
+}
+
+.FAQ_Card .card-header {
+  background: none;
+  border: none;
+}
+
+.FAQ_Card .card-header .btn {
+  color: #F8F9FA !important;
+  font-size: 20px !important;
+  text-align: left;
+}
+
+.FAQ_Card .card-header .btn.collapsed {
+  color: #F8F9FA !important;
+}
+
+.FAQ_Card .card-body {
+  background: rgba(0, 0, 0, 0.3);
+  color: #A3A7AF !important;
+}
+
+/* Styling for section_seven */
+.Contact {
+  padding: 100px 0px;
+}
+
+.Contact h2 {
+  font-size: 50px !important;
+  color: #f8f9fa;
+  text-align: center;
+  line-height: 70px !important;
+}
+
+.Contact h2 span {
+  font-size: 15px;
+  background: linear-gradient(to right, #12cfa7 0%, #3eccae 100%) !important;
+  background-clip: text !important; /* Standard */
+-webkit-background-clip: text !important; /* Chrome, Safari 3 */
+  -webkit-text-fill-color: transparent !important;
+  display: block;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.Contact_Text {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.Contact_Text p {
+  color: #A3A7AF !important;
+  font-size: 20px !important;
+  line-height: 30px !important;
+  width: 60%;
+  margin: 0 auto;
+  font-weight: 100 !important;
+}
+
+.Contact_Form {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.Contact_Form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Contact_Form .form-group {
+  width: 48%;
+}
+
+.Contact_Form label {
+  color: #A3A7AF !important;
+  font-size: 15.5px !important;
+  font-weight: 100 !important;
+  margin-bottom: 10px !important;
+}
+
+.Contact_Form input,
+.Contact_Form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #A3A7AF;
+  background: none;
+  color: #F8F9FA !important;
+  font-size: 15px !important;
+  font-weight: 100 !important;
+  border-radius: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.Contact_Form input::placeholder,
+.Contact_Form textarea::placeholder {
+  color: #A3A7AF !important;
+}
+
+.Contact_Form input:focus,
+.Contact_Form textarea:focus {
+  border-color: #12cfa7;
 }
