@@ -59,15 +59,15 @@ const NFTCard: React.FC = () => {
                 <div className="TopNftrate">
                   <div className="rateDiv">
                     <h4>34+</h4>
-                    <h6>EDITOR NFTs</h6>
+                    <h6>Sports Car</h6>
                   </div>
                   <div className="rateDiv">
                     <h4>49+</h4>
-                    <h6>AUCTIONS</h6>
+                    <h6>Classic Car</h6>
                   </div>
                   <div className="rateDiv">
                     <h4>48+</h4>
-                    <h6>SENATOR NFTs</h6>
+                    <h6>Limited Editions</h6>
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@ const NFTCard: React.FC = () => {
                             <div className="ryt">
                               <h4>Super Ferrari</h4>
                               <p>
-                                <span> </span>Senator NFT
+                                <span> </span>Concept Car NFT
                               </p>
                             </div>
                           </div>
@@ -140,7 +140,7 @@ const NFTCard: React.FC = () => {
                             <div className="ryt">
                               <h4>Super Ferrari</h4>
                               <p>
-                                <span> </span>Senator NFT
+                                <span> </span>Concept Car NFT
                               </p>
                             </div>
                           </div>
