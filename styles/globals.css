@@ -666,7 +666,7 @@ display: none;
   background: #171c20;
 }
 .footer {
-  background: url(../public/footer586d3549.jpg);
+  background: url(/public/footer.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
