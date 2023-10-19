@@ -1,8 +1,10 @@
 import React from "react";
-
+import Filtergalery from "./Filtergalery";
 const NFTCard: React.FC = () => {
   return (
     <>
+    
+   
         <section className="Main_NFT">
         <div className="container">
             <div className="nft_grd">
@@ -70,7 +72,7 @@ const NFTCard: React.FC = () => {
                 </div>
               </div>
             </div>
-             <div className="col_gd2">
+             <div className="col_gd2 bg-1">
                     <div className="RytTopNFT">
                         <div className="NftSlider">
                   <div
@@ -100,7 +102,7 @@ const NFTCard: React.FC = () => {
                               decoding="async"
                               data-nimg="1"
                               className="d-block"
-                              src="./car31.avif"
+                              src="./carnft7.jpg"
                               loading="lazy"
                             />
                           </div>
@@ -126,7 +128,7 @@ const NFTCard: React.FC = () => {
                               decoding="async"
                               data-nimg="1"
                               className="d-block"
-                              src="./car30.avif"
+                              src="./carnft11.jpg"
                               loading="lazy"
                             />
                           </div>
@@ -165,7 +167,7 @@ const NFTCard: React.FC = () => {
           <div className="trendHead">
             <h2>Trending Cars</h2>
           </div>
-          <div className="TrendingDropsData">
+          {/* <div className="TrendingDropsData">
             <div className="TrendDropItems1">
               <div className="TrddopinnerItems">
                 <div className="ExplrCategories">
@@ -247,7 +249,7 @@ const NFTCard: React.FC = () => {
 							  decoding="async"
 							  data-nimg="1"
 							  className="nftCardImage"
-							  src="./car30.avif"
+							  src="./ferrai2.avif"
 							 // style=""
 							  loading="lazy"
 							/></div>
@@ -257,11 +259,10 @@ const NFTCard: React.FC = () => {
                                 </a></h4>
                                
                                 <div className="nft_item_price">
-                                    Token: <span>100</span>
+                                    <div className="me-auto">Token: <span>100</span></div>
+                                    <div className="ms-auto"><i className="bi bi-heart"></i><span>80</span></div> 
                                 </div>
-                                <div className="nft_item_like">
-                                    <i className="bi bi-heart"></i><span>80</span>
-                                </div>                                 
+                                                                 
                             </div>
                             
                           </div>
@@ -273,7 +274,59 @@ const NFTCard: React.FC = () => {
 							  decoding="async"
 							  data-nimg="1"
 							  className="nftCardImage"
-							  src="./car31.avif"
+							  src="./ferrai3.avif"
+							 // style=""
+							  loading="lazy"
+							/></div>
+                            <div className="nft_item_info">
+                                <h4>
+                                   Clasic Car <a href="">Ferrari
+                                </a></h4>
+                               
+                                <div className="nft_item_price">
+                                    Token: <span>100</span>
+                                </div>
+                                <div className="nft_item_like">
+                                    <i className="bi bi-heart"></i><span>80</span>
+                                </div>                                 
+                            </div>
+                            
+                          </div>
+                          <div className="NftTrendCard nft_item common">
+                            <div className="wrap-img">
+                            <img
+                              width="300"
+                              height="400"
+                              decoding="async"
+                              data-nimg="1"
+                              className="nftCardImage"
+                              src="./ferrai4.avif"
+                            // style=""
+                              loading="lazy"
+                            /></div>
+                            <div className="nft_item_info">
+                                <h4>
+                                   Clasic Car <a href="">Ferrari
+                                </a></h4>
+                               
+                                <div className="nft_item_price">
+                                    Token: <span>100</span>
+                                </div>
+                                <div className="nft_item_like">
+                                    <i className="bi bi-heart"></i><span>80</span>
+                                </div>                                 
+                            </div>
+                            
+                          </div>
+                          <div className="NftTrendCard nft_item common">
+                            <div className="wrap-img">
+							<img
+							  width="300"
+							  height="400"
+							  decoding="async"
+							  data-nimg="1"
+							  className="nftCardImage"
+							  src="./ferrai5.avif"
 							 // style=""
 							  loading="lazy"
 							/></div>
@@ -299,7 +352,7 @@ const NFTCard: React.FC = () => {
 							  decoding="async"
 							  data-nimg="1"
 							  className="nftCardImage"
-							  src="./car32.avif"
+							  src="./ferrari6.avif"
 							 // style=""
 							  loading="lazy"
 							/></div>
@@ -325,59 +378,7 @@ const NFTCard: React.FC = () => {
 							  decoding="async"
 							  data-nimg="1"
 							  className="nftCardImage"
-							  src="./car33.avif"
-							 // style=""
-							  loading="lazy"
-							/></div>
-                            <div className="nft_item_info">
-                                <h4>
-                                   Clasic Car <a href="">Ferrari
-                                </a></h4>
-                               
-                                <div className="nft_item_price">
-                                    Token: <span>100</span>
-                                </div>
-                                <div className="nft_item_like">
-                                    <i className="bi bi-heart"></i><span>80</span>
-                                </div>                                 
-                            </div>
-                            
-                          </div>
-                          <div className="NftTrendCard nft_item common">
-                            <div className="wrap-img">
-							<img
-							  width="300"
-							  height="400"
-							  decoding="async"
-							  data-nimg="1"
-							  className="nftCardImage"
-							  src="./car34.avif"
-							 // style=""
-							  loading="lazy"
-							/></div>
-                            <div className="nft_item_info">
-                                <h4>
-                                   Clasic Car <a href="">Ferrari
-                                </a></h4>
-                               
-                                <div className="nft_item_price">
-                                    Token: <span>100</span>
-                                </div>
-                                <div className="nft_item_like">
-                                    <i className="bi bi-heart"></i><span>80</span>
-                                </div>                                 
-                            </div>
-                            
-                          </div>
-                          <div className="NftTrendCard nft_item common">
-                            <div className="wrap-img">
-							<img
-							  width="300"
-							  height="400"
-							  decoding="async"
-							  data-nimg="1"
-							  className="nftCardImage"
-							  src="./car35.avif"
+							  src="./ferrari8.avif"
 							 // style=""
 							  loading="lazy"
 							/></div>
@@ -396,7 +397,13 @@ const NFTCard: React.FC = () => {
                             
                           </div>
                     </div>
-                </div>
+                </div> */}
+          <div className="row">
+          <div className="col-lg-12 text-center my-2">
+              <Filtergalery></Filtergalery>
+            </div>
+        </div>
+
             </div>
        
     </section>
@@ -409,36 +416,37 @@ const NFTCard: React.FC = () => {
             <div className="explore-card">
               <img src="./carnf12.jpg" alt="ferrari"/>
               <div className="info">
-                Ferrai12
+                Ferrai12  <span className="rate"><i className="bi bi-heart"></i><span>60</span></span>
               </div>
             </div>
             <div className="explore-card">
               <img src="./carnf12.jpg" alt="ferrari"/>
               <div className="info">
-                Ferrai12
+                Ferrai12  <span className="rate"><i className="bi bi-heart"></i><span>60</span></span>
               </div>
             </div>
             <div className="explore-card">
               <img src="./carnft2.jpg" alt="ferrari"/>
               <div className="info">
-                Ferrai12
+                Ferrai12  <span className="rate"><i className="bi bi-heart"></i><span>60</span></span>
               </div>
             </div>
             <div className="explore-card">
               <img src="./carnft6.jpg" alt="ferrari"/>
               <div className="info">
-                Ferrai12
+                Ferrai12  <span className="rate"><i className="bi bi-heart"></i><span>60</span></span>
               </div>
             </div>
             <div className="explore-card">
               <img src="./carnft8.jpg" alt="ferrari"/>
               <div className="info">
-                Ferrai12
+                Ferrai12  <span className="rate"><i className="bi bi-heart"></i><span>60</span></span>
               </div>
             </div>
           </div>
     </div>
     </section>
+     
     <section className="footer">
         <div className="container">
           <div className="inner_footer">
@@ -457,7 +465,7 @@ const NFTCard: React.FC = () => {
                             <div className="de-flex" >
                                 <div className="de-flex-col" >
                                     <a href="">
-                                        <img alt="" className="img-logo" src="./logo.png"  />
+                                        <img alt="" className="img-logo" src="./logo.svg"  />
                                     </a>
 
                                 </div>
