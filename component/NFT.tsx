@@ -1,21 +1,23 @@
 import React from "react";
 import Filtergalery from "./Filtergalery";
+import {stylingcss} from "@/utils/styles"
+
 const NFTCard: React.FC = () => {
+  const style=stylingcss()
   return (
     <>
-    
-   
-        <section className="Main_NFT">
+      <section className="Main_NFT">
         <div className="container">
-            <div className="nft_grd">
-                <div className="col_gd1">
-                    <div className="leftTopNFT">
-                        <div className="topNftHeading">
-                            <h2>
-                                <span>Explore and Acquire Exclusive NFTs</span> Own a Piece of Digital History
-                            </h2>
-                        </div>
-                        <div className="topNftpara">
+          <div className="nft_grd">
+            <div className="col_gd1">
+              <div className="leftTopNFT">
+                <div className="topNftHeading">
+                  <h2>
+                    <span>Explore and Acquire Exclusive NFTs</span> Own a Piece
+                    of Digital History
+                  </h2>
+                </div>
+                <div className="topNftpara">
                   <p>
                     Introducing our stunning "Sleek Supercar" NFT, a true
                     masterpiece in the world of digital art and luxury
@@ -72,9 +74,9 @@ const NFTCard: React.FC = () => {
                 </div>
               </div>
             </div>
-             <div className="col_gd2 bg-1">
-                    <div className="RytTopNFT">
-                        <div className="NftSlider">
+            <div className="col_gd2 bg-1">
+              <div className="RytTopNFT">
+                <div className="NftSlider">
                   <div
                     id="nft-slide"
                     className="carousel slide"
@@ -147,22 +149,34 @@ const NFTCard: React.FC = () => {
                         </div>
                       </div>
                     </div>
-					<button className="carousel-control-prev" type="button" data-bs-target="#nft-slide" data-bs-slide="prev">
-                                    <i className="bi bi-arrow-left-circle"></i>
-                                  </button>
-                                  <button className="carousel-control-next" type="button" data-bs-target="#nft-slide" data-bs-slide="next">
-                                    <i className="bi bi-arrow-right-circle"></i>
-                                  </button>
+                    <button
+                      className="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#nft-slide"
+                      data-bs-slide="prev"
+                    >
+                      <i className="bi bi-arrow-left-circle"></i>
+                    </button>
+                    <button
+                      className="carousel-control-next"
+                      type="button"
+                      data-bs-target="#nft-slide"
+                      data-bs-slide="next"
+                    >
+                      <i className="bi bi-arrow-right-circle"></i>
+                    </button>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="TrendingDrops">
+      <section
+        className="TrendingDrops"
+        style={style}
+      >
         <div className="container">
           <div className="trendHead">
             <h2>Trending Cars</h2>
@@ -399,91 +413,127 @@ const NFTCard: React.FC = () => {
                     </div>
                 </div> */}
           <div className="row">
-          <div className="col-lg-12 text-center my-2">
+            <div className="col-lg-12 text-center my-2">
               <Filtergalery></Filtergalery>
             </div>
+          </div>
         </div>
-
-            </div>
-       
-    </section>
-    <section className="exploreMore">
-    <div className="container">
+      </section>
+      <section className="exploreMore">
+        <div className="container">
           <div className="trendHead">
             <h2>Explore More</h2>
           </div>
           <div className="explore_d-grid">
             <div className="explore-card">
-              <img src="./carnf12.jpg" alt="ferrari"/>
+              <img src="./carnf12.jpg" alt="ferrari" />
               <div className="info">
-                Ferrai12  <span className="rate"><i className="bi bi-heart"></i><span>60</span></span>
+                Ferrai12{" "}
+                <span className="rate">
+                  <i className="bi bi-heart"></i>
+                  <span>60</span>
+                </span>
               </div>
             </div>
             <div className="explore-card">
-              <img src="./carnf12.jpg" alt="ferrari"/>
+              <img src="./carnf12.jpg" alt="ferrari" />
               <div className="info">
-                Ferrai12  <span className="rate"><i className="bi bi-heart"></i><span>60</span></span>
+                Ferrai12{" "}
+                <span className="rate">
+                  <i className="bi bi-heart"></i>
+                  <span>60</span>
+                </span>
               </div>
             </div>
             <div className="explore-card">
-              <img src="./carnft2.jpg" alt="ferrari"/>
+              <img src="./carnft2.jpg" alt="ferrari" />
               <div className="info">
-                Ferrai12  <span className="rate"><i className="bi bi-heart"></i><span>60</span></span>
+                Ferrai12{" "}
+                <span className="rate">
+                  <i className="bi bi-heart"></i>
+                  <span>60</span>
+                </span>
               </div>
             </div>
             <div className="explore-card">
-              <img src="./carnft6.jpg" alt="ferrari"/>
+              <img src="./carnft6.jpg" alt="ferrari" />
               <div className="info">
-                Ferrai12  <span className="rate"><i className="bi bi-heart"></i><span>60</span></span>
+                Ferrai12{" "}
+                <span className="rate">
+                  <i className="bi bi-heart"></i>
+                  <span>60</span>
+                </span>
               </div>
             </div>
             <div className="explore-card">
-              <img src="./carnft8.jpg" alt="ferrari"/>
+              <img src="./carnft8.jpg" alt="ferrari" />
               <div className="info">
-                Ferrai12  <span className="rate"><i className="bi bi-heart"></i><span>60</span></span>
+                Ferrai12{" "}
+                <span className="rate">
+                  <i className="bi bi-heart"></i>
+                  <span>60</span>
+                </span>
               </div>
             </div>
           </div>
-    </div>
-    </section>
-     
-    <section className="footer">
+        </div>
+      </section>
+
+      <section className="footer">
         <div className="container">
           <div className="inner_footer">
-                <div className="big_btn_row aos-init aos-animate" data-aos="fade-left" data-aos-duration="3000">
-                  <span><a href="#">Terms and Conditions</a></span>
-                  <span><a href="#">Privacy Policy</a></span>
-                  <span><a href="#">Cookies Policy</a></span>
-                </div>
-          </div>
-          
-          </div>
-          <div className="subfooter" >
-                <div className="container" >
-                    <div className="row" >
-                        <div className="col-md-12" >
-                            <div className="de-flex" >
-                                <div className="de-flex-col" >
-                                    <a href="">
-                                        <img alt="" className="img-logo" src="./logo.svg"  />
-                                    </a>
-
-                                </div>
-                                <div className="de-flex-col" >
-                                    <div className="social-icons" >
-                                        <a href="#"><i className="bi bi-facebook bi-lg"></i></a>
-                                        <a href="#"><i className="bi bi-twitter bi-lg"></i></a>
-                                        <a href="#"><i className="bi bi-linkedin bi-lg"></i></a>
-                                        <a href="#"><i className="bi bi-pinterest bi-lg"></i></a>
-                                        <a href="#"><i className="bi bi-rss bi-lg"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div
+              className="big_btn_row aos-init aos-animate"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+            >
+              <span>
+                <a href="#">Terms and Conditions</a>
+              </span>
+              <span>
+                <a href="#">Privacy Policy</a>
+              </span>
+              <span>
+                <a href="#">Cookies Policy</a>
+              </span>
             </div>
-    </section>   
+          </div>
+        </div>
+        <div className="subfooter">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="de-flex">
+                  <div className="de-flex-col">
+                    <a href="">
+                      <img alt="" className="img-logo" src="./logo.svg" />
+                    </a>
+                  </div>
+                  <div className="de-flex-col">
+                    <div className="social-icons">
+                      <a href="#">
+                        <i className="bi bi-facebook bi-lg"></i>
+                      </a>
+                      <a href="#">
+                        <i className="bi bi-twitter bi-lg"></i>
+                      </a>
+                      <a href="#">
+                        <i className="bi bi-linkedin bi-lg"></i>
+                      </a>
+                      <a href="#">
+                        <i className="bi bi-pinterest bi-lg"></i>
+                      </a>
+                      <a href="#">
+                        <i className="bi bi-rss bi-lg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
