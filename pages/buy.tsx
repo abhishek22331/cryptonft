@@ -14,7 +14,7 @@ const Buy = () => {
         <Link href="/">Learn more</Link>
         <br/>
         <h3>Visit telegram for more information</h3>
-        <Link href="https://www.telegram.com" target="_blank">
+        <Link href="https://www.telegram.org" target="_blank">
           <img
             src="./telegram.svg"
             style={{ width: "100px", height: "100px" }}
