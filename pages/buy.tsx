@@ -8,20 +8,20 @@ const Buy = () => {
     <div>
       <Navbar />
 
-      <div className="centered-container-claim">
-        <h1>Buy not available now </h1>
+      <section className="claim">
+        <div className="container centered-container-claim">
+          <div className="row text-center claim_text">
+          <h1 className="lg-font text-green">Buy not available now </h1>
 
-        <Link href="/">Learn more</Link>
-        <br/>
+          <p> <Link href="/">Learn more</Link></p>
+       
         <h3>Visit telegram for more information</h3>
         <Link href="https://www.telegram.org" target="_blank">
-          <img
-            src="./telegram.svg"
-            style={{ width: "100px", height: "100px" }}
-            alt="Telegram"
-          />
+        <i className="bi bi-telegram fnts-2"></i>
         </Link>
-      </div>
+        </div>
+        </div>
+      </section>
 
       <Footer/>
     </div>

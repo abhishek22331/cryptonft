@@ -10,19 +10,20 @@ const Claim = () => {
   return (
     <div>
       <Navbar />
-      <div className="centered-container-claim">
-        <h1>Claim not available now </h1>
-        <Link href="/">Learn more</Link>
-        <br/>
-        <h3>Visit telegram for more information</h3>
-        <Link href="https://www.telegram.org" target="_blank">
-          <img
-            src="./telegram.svg"
-            style={{ width: "100px", height: "100px" }}
-            alt="Telegram"
-          />
+      <section className="claim">
+        <div className="container centered-container-claim">
+          <div className="row text-center claim_text">
+          <h1 className="lg-font text-green">Claim not available now </h1>
+          <p> <Link href="/">Learn more</Link></p>
+       
+        <h3 className="">Visit telegram for more information</h3>
+        <Link href="https://www.telegram.org" target="_blank" >
+        <i className="bi bi-telegram fnts-2"></i>
         </Link>
-      </div>
+          </div>
+        </div>
+      </section>
+      
 
       <Footer />
     </div>

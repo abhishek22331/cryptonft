@@ -87,12 +87,12 @@ const Filtergalery: React.FC = () => {
                 <div className="me-auto">
                   Token: <span>100</span>
                 </div>
-                <div className="ms-auto">
+                <div className="ms-auto tok">
                   <i className="bi bi-heart"></i>
                   <span>80</span>
                 </div>
               </div>
-              <button onClick={() =>router.push("/buy")}>BUY FERRARI</button>
+              <button className="btn btn-danger mt-2" onClick={() =>router.push("/buy")}>BUY FERRARI</button>
 
             </div>
           </div>
