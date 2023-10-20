@@ -1212,3 +1212,12 @@ display: none;
 
 
 
+/*claim page*/
+
+.centered-container-claim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
