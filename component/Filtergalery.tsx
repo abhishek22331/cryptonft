@@ -92,7 +92,7 @@ const Filtergalery: React.FC = () => {
                   <span>80</span>
                 </div>
               </div>
-              <button onClick={() =>router.push("/buy")}>BUY</button>
+              <button onClick={() =>router.push("/buy")}>BUY FERRARI</button>
 
             </div>
           </div>
