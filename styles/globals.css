@@ -358,7 +358,7 @@ a:hover
 
 .TrendingDrops{
   padding: 50px 0px 100px 0;
-  background:linear-gradient(to right, rgba(137, 80, 250, 0.8), rgba(112, 6, 20, 0.8)), url(../public/carnft9.jpg);
+  background:linear-gradient(to right, rgba(137, 80, 250, 0.8), rgba(112, 6, 20, 0.8)), url(../public/Images/carnft9.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat, no-repeat;
@@ -666,7 +666,7 @@ display: none;
   background: #171c20;
 }
 .footer {
-  background: url(../public/footer.jpg);
+  background: url(../public/Images/footer.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
