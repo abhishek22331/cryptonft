@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 import { useState, useEffect } from "react";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 interface DataState {
   address: string;
@@ -11,8 +11,14 @@ const Navbar: React.FC = () => {
     address: "",
     Balance: null,
   });
-  const router = useRouter();
+  const [url, setUrl] = useState("");
 
+  const router = useRouter();
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setUrl(window.location.pathname);
+    }
+  }, []);
   const [isConnected, setIsConnected] = useState(false);
 
   const btnhandler = async () => {
@@ -88,27 +94,65 @@ const Navbar: React.FC = () => {
       });
     }
   }, []);
-  console.log(data,"dddddatatatta")
-  return (<>
-    <header>
-    <nav className="navbar navbar-expand-lg nav-trans-bdr">
-        <div className="container">
-          <a className="navbar-brand" onClick={() =>router.push("/")} style={{cursor:"pointer"}}> <img alt="logo" loading="lazy" src="./logo.svg" className="img-logo" /></a>
-         
-          <div className="collapse navbar-collapse" id="mynavbar">
-            <ul className="navbar-nav mx-auto">
-              <li className="nav-item">
-                <a className="nav-link" onClick={() =>router.push("/")} style={{cursor:"pointer"}}>Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" onClick={() =>router.push("/buy")} style={{cursor:"pointer"}}>Buy</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" onClick={() =>router.push("/claim")} style={{cursor:"pointer"}}>Claim</a>
-              </li>
-            </ul>
-            <div className="form-flex gap-2">
-            {/* <select name="cars" id="cars" className="form-select">
+  console.log(data, "dddddatatatta");
+  return (
+    <>
+      <header>
+        <nav className="navbar navbar-expand-lg nav-trans-bdr">
+          <div className="container">
+            <a
+              className="navbar-brand"
+              onClick={() => router.push("/")}
+              style={{ cursor: "pointer" }}
+            >
+              {" "}
+              <img
+                alt="logo"
+                loading="lazy"
+                src="./logo.svg"
+                className="img-logo"
+              />
+            </a>
+
+            <div className="collapse navbar-collapse" id="mynavbar">
+              <ul className="navbar-nav mx-auto">
+                <li className="nav-item">
+                  <a
+                    className={
+                      url && url === "/" ? "nav-link active" : "nav-link"
+                    }
+                    onClick={() => router.push("/")}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className={
+                      url && url === "/buy" ? "nav-link active" : "nav-link"
+                    }
+                    aria-current="page"
+                    onClick={() => router.push("/buy")}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Buy
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className={
+                      url && url === "/claim" ? "nav-link active" : "nav-link"
+                    }
+                    onClick={() => router.push("/claim")}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Claim
+                  </a>
+                </li>
+              </ul>
+              <div className="form-flex gap-2">
+                {/* <select name="cars" id="cars" className="form-select">
                 <option value="disabled" disabled selected>
                   Select an option
                 </option>
@@ -118,30 +162,64 @@ const Navbar: React.FC = () => {
                 <option value="Limited Edition">Limited Edition</option>
                 <option value="Concept Cars">Concept Cars</option>
               </select> */}
-              {/* <input type="text" id="searchInput" placeholder="Search..." className="form-control" /> */}
+                {/* <input type="text" id="searchInput" placeholder="Search..." className="form-control" /> */}
+              </div>
+
+              <div className="vs-mb">
+                {data.address ? (
+                  <span style={{ color: "#21997f" }}>
+                    {data.address.slice(0, 5)}....
+                    {data.address.slice(33, data.address.length)}
+                  </span>
+                ) : (
+                  <button
+                    className="btn btn-primary btn-connect m-pos-chng-btn"
+                    type="button"
+                    onClick={btnhandler}
+                  >
+                    Connect Wallet
+                  </button>
+                )}
+              </div>
             </div>
-            
-            <div className="vs-mb">{data.address?<span style={{color:"#21997f"}}>{data.address.slice(0,5)}....{data.address.slice(33,data.address.length)}</span>:<button className="btn btn-primary btn-connect m-pos-chng-btn" type="button" onClick={btnhandler}>Connect Wallet</button>}</div>
-            
-          </div>
-          <div className="button-pos ms-auto"> <div className="vs-lg"> {data.address?<span style={{color:"#21997f"}}>{data.address.slice(0,5)}....{data.address.slice(33,data.address.length)}</span>:<button className="btn btn-primary btn-connect m-pos-chng-btn" type="button" onClick={btnhandler}>Connect Wallet</button>}</div>
-          <div className="avatar-container">
-              <img
-                src="./profile.png"
-                alt="Your Avatar"
-                className="avatar-image"
-              />
+            <div className="button-pos ms-auto">
+              {" "}
+              <div className="vs-lg">
+                {" "}
+                {data.address ? (
+                  <span style={{ color: "#21997f" }}>
+                    {data.address.slice(0, 5)}....
+                    {data.address.slice(33, data.address.length)}
+                  </span>
+                ) : (
+                  <button
+                    className="btn btn-primary btn-connect m-pos-chng-btn"
+                    type="button"
+                    onClick={btnhandler}
+                  >
+                    Connect Wallet
+                  </button>
+                )}
+              </div>
+              <div className="avatar-container">
+                <img
+                  src="./profile.png"
+                  alt="Your Avatar"
+                  className="avatar-image"
+                />
+              </div>
+              <button
+                className="navbar-toggler ms-auto pos-right"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mynavbar"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
             </div>
-            <button className="navbar-toggler ms-auto pos-right" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-              <span className="navbar-toggler-icon"></span>
-            </button>
           </div>
-         
-        </div>
-      </nav>
-      
-</header>
-     
+        </nav>
+      </header>
     </>
   );
 };
