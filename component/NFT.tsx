@@ -1,13 +1,13 @@
 import React from "react";
 import Filtergalery from "./Filtergalery";
-import {stylingcss} from "@/utils/styles"
-import carnft9 from "@/public/carnft9.jpg"
+import { stylingcss } from "@/utils/styles";
+import carnft9 from "@/public/carnft9.jpg";
 import Footer from "./Footer";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 const NFTCard: React.FC = () => {
   const router = useRouter();
 
-  const style=stylingcss()
+  const style = stylingcss();
   return (
     <>
       <section className="Main_NFT">
@@ -23,33 +23,27 @@ const NFTCard: React.FC = () => {
                 </div>
                 <div className="topNftpara">
                   <p>
-                    Introducing our stunning "Sleek Supercar" NFT, a true
-                    masterpiece in the world of digital art and luxury
-                    automobiles. This unique digital collectible is a
-                    celebration of cutting-edge technology, design, and
-                    automotive excellence, encapsulated in the form of a
-                    non-fungible token (NFT).
+                    Welcome to the world of mystery NFTs, where the digital and
+                    the enigmatic collide. Here, you'll discover a unique and
+                    captivating collection of digital treasures, each shrouded
+                    in mystery. Our mystery NFTs offer a thrilling blend of art,
+                    technology, and the unknown, promising exciting surprises
+                    for those who dare to explore. Uncover hidden gems,
+                    exclusive content, and the unexpected as you embark on a
+                    digital adventure like no other.
                   </p>
                   <ul className="list-m">
                     <li>
-                      Impeccable Design: The Sleek Supercar is a fusion of
-                      aerodynamic precision and aesthetic beauty, making it a
-                      true work of art on wheels.
+                    Explore an intriguing world of digital collectibles where each mystery NFT is a gateway to unlocking hidden treasures
                     </li>
                     <li>
-                      High-Performance: With [mention horsepower] horsepower and
-                      [mention torque] lb-ft of torque, this car is a beast on
-                      the road.
+                    Experience the perfect fusion of digital artistry and the thrill of the unknown in every mystery NFT.
                     </li>
                     <li>
-                      Exquisite Craftsmanship: Every detail, from the
-                      hand-stitched leather interior to the precision-engineered
-                      components, reflects unparalleled craftsmanship.
+                    Acquire these NFTs to reveal unique content, whether it's rare artwork, exclusive media, or other surprises.
                     </li>
                     <li>
-                      Limited Edition: This NFT represents a limited edition
-                      release, making it a rare and exclusive digital
-                      collectible.
+                    Every mystery NFT acquisition is a digital adventure, offering an element of surprise and anticipation with each reveal.
                     </li>
                   </ul>
                 </div>
@@ -57,14 +51,14 @@ const NFTCard: React.FC = () => {
                   <button
                     type="button"
                     className="green-btn btn btn-primary"
-                    onClick={() =>router.push("/claim")}
+                    onClick={() => router.push("/claim")}
                   >
                     CLAIM MYSTERY BOX
                   </button>
                   <button
                     type="button"
                     className="green-btn btn btn-primary"
-                    onClick={() =>router.push("/claim")}
+                    onClick={() => router.push("/claim")}
                   >
                     BUY MYSTERY BOX
                   </button>
@@ -106,12 +100,12 @@ const NFTCard: React.FC = () => {
                         data-bs-target="#nft-slide"
                         data-bs-slide-to="1"
                       ></button>
-                       <button
+                      <button
                         type="button"
                         data-bs-target="#nft-slide"
                         data-bs-slide-to="2"
                       ></button>
-                       <button
+                      <button
                         type="button"
                         data-bs-target="#nft-slide"
                         data-bs-slide-to="3"
@@ -132,13 +126,13 @@ const NFTCard: React.FC = () => {
                           </div>
                           <div className="nftslidetext">
                             <div className="lft">
-                              <h4>Sports Cars</h4>
-                              <p>Sports</p>
+                              <h4>Mystery box</h4>
+                              <p>Mystery</p>
                             </div>
                             <div className="ryt">
-                              <h4>Super Ferrari</h4>
+                              <h4>Super Mystery box</h4>
                               <p>
-                                <span> </span>Concept Car NFT
+                                <span> </span>Concept Mystery box
                               </p>
                             </div>
                           </div>
@@ -158,13 +152,13 @@ const NFTCard: React.FC = () => {
                           </div>
                           <div className="nftslidetext">
                             <div className="lft">
-                              <h4>Sports Cars</h4>
-                              <p>Sports</p>
+                              <h4>Mystery box</h4>
+                              <p>Mystery</p>
                             </div>
                             <div className="ryt">
-                              <h4>Super Ferrari</h4>
+                              <h4>Super Mystery box</h4>
                               <p>
-                                <span> </span>Concept Car NFT
+                                <span> </span>Concept Mystery box
                               </p>
                             </div>
                           </div>
@@ -197,10 +191,7 @@ const NFTCard: React.FC = () => {
         </div>
       </section>
 
-      <section
-        className="TrendingDrops"
-        style={style}
-      >
+      <section className="TrendingDrops" style={style}>
         <div className="container">
           <div className="trendHead">
             <h2>Trending Cars</h2>
@@ -503,7 +494,7 @@ const NFTCard: React.FC = () => {
         </div>
       </section>
 
-      <Footer/>
+      <Footer />
     </>
   );
 };

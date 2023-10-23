@@ -93,18 +93,18 @@ const Navbar: React.FC = () => {
     <header>
     <nav className="navbar navbar-expand-lg nav-trans-bdr">
         <div className="container">
-          <a className="navbar-brand" href=""> <img alt="logo" loading="lazy" src="./logo.svg" className="img-logo" /></a>
+          <a className="navbar-brand" onClick={() =>router.push("/")} style={{cursor:"pointer"}}> <img alt="logo" loading="lazy" src="./logo.svg" className="img-logo" /></a>
          
           <div className="collapse navbar-collapse" id="mynavbar">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <a className="nav-link" href="">Home</a>
+                <a className="nav-link" onClick={() =>router.push("/")} style={{cursor:"pointer"}}>Home</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" onClick={() =>router.push("/buy")} style={{cursor:"pointer"}}>Buy</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="">NFT</a>
+                <a className="nav-link" onClick={() =>router.push("/claim")} style={{cursor:"pointer"}}>Claim</a>
               </li>
             </ul>
             <div className="form-flex gap-2">
