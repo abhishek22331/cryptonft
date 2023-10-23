@@ -1,6 +1,8 @@
+import { Router, useRouter } from 'next/router'
 import React from 'react'
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <section className="footer">
         <div className="container">
@@ -28,8 +30,8 @@ const Footer = () => {
               <div className="col-md-12">
                 <div className="de-flex">
                   <div className="de-flex-col">
-                    <a href="">
-                      <img alt="" className="img-logo" src="./logo.svg" />
+                    <a onClick={() =>router.push("/")}>
+                      <img alt=""  style={{cursor:"pointer"}} className="img-logo" src="./logo.svg" />
                     </a>
                   </div>
                   <div className="de-flex-col">
