@@ -59,7 +59,14 @@ const NFTCard: React.FC = () => {
                     className="green-btn d-flex btn btn-primary"
                     onClick={() =>router.push("/claim")}
                   >
-                    CLAIM FERRARI
+                    CLAIM MYSTERY BOX
+                  </button>
+                  <button
+                    type="button"
+                    className="green-btn d-flex btn btn-primary"
+                    onClick={() =>router.push("/claim")}
+                  >
+                    BUY MYSTERY BOX
                   </button>
                 </div>
                 <br />

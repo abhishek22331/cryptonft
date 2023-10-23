@@ -1,5 +1,7 @@
 import { ethers } from "ethers";
 import { useState, useEffect } from "react";
+import { useRouter } from 'next/router';
+
 interface DataState {
   address: string;
   Balance: string | null;
@@ -9,6 +11,7 @@ const Navbar: React.FC = () => {
     address: "",
     Balance: null,
   });
+  const router = useRouter();
 
   const [isConnected, setIsConnected] = useState(false);
 
@@ -98,7 +101,7 @@ const Navbar: React.FC = () => {
                 <a className="nav-link" href="">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="">Gov</a>
+                <a className="nav-link" onClick={() =>router.push("/buy")} style={{cursor:"pointer",color:"white !important"}}>Buy</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="">NFT</a>
@@ -115,7 +118,7 @@ const Navbar: React.FC = () => {
                 <option value="Limited Edition">Limited Edition</option>
                 <option value="Concept Cars">Concept Cars</option>
               </select> */}
-              <input type="text" id="searchInput" placeholder="Search..." className="form-control" />
+              {/* <input type="text" id="searchInput" placeholder="Search..." className="form-control" /> */}
             </div>
             
             <div className="vs-mb">{data.address?<span style={{color:"#21997f"}}>{data.address.slice(0,5)}....{data.address.slice(33,data.address.length)}</span>:<button className="btn btn-primary btn-connect m-pos-chng-btn" type="button" onClick={btnhandler}>Connect Wallet</button>}</div>
