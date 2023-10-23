@@ -17,6 +17,7 @@ body {
 .btn-buy
 {
   margin-top:10px;
+  font-weight: 600;
 }
 .de-flex {
   display: flex;
