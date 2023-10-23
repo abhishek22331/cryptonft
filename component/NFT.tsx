@@ -53,17 +53,17 @@ const NFTCard: React.FC = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="topNftButton">
+                <div className="topNftButton  ">
                   <button
                     type="button"
-                    className="green-btn d-flex btn btn-primary"
+                    className="green-btn btn btn-primary"
                     onClick={() =>router.push("/claim")}
                   >
                     CLAIM MYSTERY BOX
                   </button>
                   <button
                     type="button"
-                    className="green-btn d-flex btn btn-primary"
+                    className="green-btn btn btn-primary"
                     onClick={() =>router.push("/claim")}
                   >
                     BUY MYSTERY BOX
@@ -106,6 +106,16 @@ const NFTCard: React.FC = () => {
                         data-bs-target="#nft-slide"
                         data-bs-slide-to="1"
                       ></button>
+                       <button
+                        type="button"
+                        data-bs-target="#nft-slide"
+                        data-bs-slide-to="2"
+                      ></button>
+                       <button
+                        type="button"
+                        data-bs-target="#nft-slide"
+                        data-bs-slide-to="3"
+                      ></button>
                     </div>
                     <div className="carousel-inner">
                       <div className="active carousel-item">
@@ -116,7 +126,7 @@ const NFTCard: React.FC = () => {
                               decoding="async"
                               data-nimg="1"
                               className="d-block"
-                              src="./carnft7.jpg"
+                              src="./mystbox1.jpg"
                               loading="lazy"
                             />
                           </div>
@@ -142,7 +152,59 @@ const NFTCard: React.FC = () => {
                               decoding="async"
                               data-nimg="1"
                               className="d-block"
-                              src="./carnft11.jpg"
+                              src="./mystbox2.jpg"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div className="nftslidetext">
+                            <div className="lft">
+                              <h4>Sports Cars</h4>
+                              <p>Sports</p>
+                            </div>
+                            <div className="ryt">
+                              <h4>Super Ferrari</h4>
+                              <p>
+                                <span> </span>Concept Car NFT
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="carousel-item">
+                        <div className="Sliderbanner">
+                          <div className="Nftsliderimage">
+                            <img
+                              alt="abc"
+                              decoding="async"
+                              data-nimg="1"
+                              className="d-block"
+                              src="./mystbox3.jpg"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div className="nftslidetext">
+                            <div className="lft">
+                              <h4>Sports Cars</h4>
+                              <p>Sports</p>
+                            </div>
+                            <div className="ryt">
+                              <h4>Super Ferrari</h4>
+                              <p>
+                                <span> </span>Concept Car NFT
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="carousel-item">
+                        <div className="Sliderbanner">
+                          <div className="Nftsliderimage">
+                            <img
+                              alt="abc"
+                              decoding="async"
+                              data-nimg="1"
+                              className="d-block"
+                              src="./mystbox4.jpg"
                               loading="lazy"
                             />
                           </div>

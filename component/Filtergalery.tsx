@@ -72,7 +72,7 @@ const Filtergalery: React.FC = () => {
       {imageUrls.map((item, index) => (
         <div
           key={index} 
-          className="item col-lg-3 col-md-4 col-6 col-sm"
+          className="item col-lg-3 col-md-4 col-sm-6"
           data-category={item.category}
         >
           <div className="NftTrendCard nft_item">
@@ -92,7 +92,7 @@ const Filtergalery: React.FC = () => {
                   <span>80</span>
                 </div>
               </div>
-              <button onClick={() =>router.push("/buy")}>BUY BOX</button>
+              <button className="btn btn-danger btn-buy" onClick={() =>router.push("/buy")}>BUY BOX</button>
 
             </div>
           </div>
