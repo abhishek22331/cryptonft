@@ -98,13 +98,13 @@ const Navbar: React.FC = () => {
           <div className="collapse navbar-collapse" id="mynavbar">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <a className="nav-link" href="">Home</a>
+                <a className="nav-link" href="/">Home</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" onClick={() =>router.push("/buy")} style={{cursor:"pointer"}}>Buy</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="">NFT</a>
+                <a className="nav-link" href="/">NFT</a>
               </li>
             </ul>
             <div className="form-flex gap-2">
