@@ -126,7 +126,7 @@ const NFTCard: React.FC = () => {
                               decoding="async"
                               data-nimg="1"
                               className="d-block"
-                              src="./mystbox1.jpg"
+                              src="./mystbox2.png"
                               loading="lazy"
                             />
                           </div>
@@ -152,7 +152,7 @@ const NFTCard: React.FC = () => {
                               decoding="async"
                               data-nimg="1"
                               className="d-block"
-                              src="./mystbox2.jpg"
+                              src="./mystbox1.jpeg"
                               loading="lazy"
                             />
                           </div>
@@ -170,58 +170,8 @@ const NFTCard: React.FC = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="carousel-item">
-                        <div className="Sliderbanner">
-                          <div className="Nftsliderimage">
-                            <img
-                              alt="abc"
-                              decoding="async"
-                              data-nimg="1"
-                              className="d-block"
-                              src="./mystbox3.jpg"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div className="nftslidetext">
-                            <div className="lft">
-                              <h4>Sports Cars</h4>
-                              <p>Sports</p>
-                            </div>
-                            <div className="ryt">
-                              <h4>Super Ferrari</h4>
-                              <p>
-                                <span> </span>Concept Car NFT
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="carousel-item">
-                        <div className="Sliderbanner">
-                          <div className="Nftsliderimage">
-                            <img
-                              alt="abc"
-                              decoding="async"
-                              data-nimg="1"
-                              className="d-block"
-                              src="./mystbox4.jpg"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div className="nftslidetext">
-                            <div className="lft">
-                              <h4>Sports Cars</h4>
-                              <p>Sports</p>
-                            </div>
-                            <div className="ryt">
-                              <h4>Super Ferrari</h4>
-                              <p>
-                                <span> </span>Concept Car NFT
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                     
+                     
                     </div>
                     <button
                       className="carousel-control-prev"

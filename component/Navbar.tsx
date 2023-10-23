@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
                 <a className="nav-link" href="">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" onClick={() =>router.push("/buy")} style={{cursor:"pointer"}}>Buy</a>
+                <a className="nav-link active" aria-current="page" onClick={() =>router.push("/buy")} style={{cursor:"pointer"}}>Buy</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="">NFT</a>
