@@ -128,6 +128,12 @@ a:hover
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.btn-connect
+{
+  padding:0.8rem 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
 .btn-connect:hover,.green-btn:hover {
   color: #fff;
   background-color:rgb(43, 151, 128);
@@ -1254,16 +1260,19 @@ display: none;
     width: 95%;
   }
   .NftSlider .carousel-control-prev{
-      left:36%;
+      left:38%;
       font-size: 1rem;
-      top: 90%;
+      top: 72%;
   }
+  .lft p, .ryt p {
+    font-size: 10px !important;
+}
   .NftSlider .carousel-control-next
   {
      
-      right:36%;
+      right:38%;
       font-size: 1rem;
-      top: 90%;
+      top: 72%;
   }
 
 }
