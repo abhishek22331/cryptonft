@@ -201,13 +201,13 @@ const Navbar: React.FC = () => {
                   </button>
                 )}
               </div>
-              <div className="avatar-container">
+              {/* <div className="avatar-container">
                 <img
                   src="./profile.png"
                   alt="Your Avatar"
                   className="avatar-image"
                 />
-              </div>
+              </div> */}
               <button
                 className="navbar-toggler ms-auto pos-right"
                 type="button"
