@@ -47,7 +47,8 @@ const NFTCard: React.FC = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="topNftButton  ">
+                <div className="visible-lg">
+                <div className="topNftButton ">
                   <button
                     type="button"
                     className="green-btn btn btn-primary"
@@ -63,6 +64,8 @@ const NFTCard: React.FC = () => {
                     BUY MYSTERY BOX
                   </button>
                 </div>
+                </div>
+              
                 <br />
                 <div className="TopNftrate">
                   <div className="rateDiv">
@@ -184,6 +187,27 @@ const NFTCard: React.FC = () => {
                       <i className="bi bi-arrow-right-circle"></i>
                     </button>
                   </div>
+                </div>
+                <div className="visible-xs">
+                <div className="topNftButton ">
+                  
+
+                  
+                  <button
+                    type="button"
+                    className="green-btn btn btn-primary"
+                    onClick={() => router.push("/claim")}
+                  >
+                    CLAIM MYSTERY BOX
+                  </button>
+                  <button
+                    type="button"
+                    className="green-btn btn btn-primary"
+                    onClick={() => router.push("/claim")}
+                  >
+                    BUY MYSTERY BOX
+                  </button>
+                </div>
                 </div>
               </div>
             </div>

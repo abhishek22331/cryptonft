@@ -151,8 +151,8 @@ const Navbar: React.FC = () => {
                   </a>
                 </li>
               </ul>
-              <div className="form-flex gap-2">
-                {/* <select name="cars" id="cars" className="form-select">
+              {/* <div className="form-flex gap-2">
+              <select name="cars" id="cars" className="form-select">
                 <option value="disabled" disabled selected>
                   Select an option
                 </option>
@@ -161,9 +161,9 @@ const Navbar: React.FC = () => {
                 <option value="Classic Cars">Classic Cars</option>
                 <option value="Limited Edition">Limited Edition</option>
                 <option value="Concept Cars">Concept Cars</option>
-              </select> */}
-                {/* <input type="text" id="searchInput" placeholder="Search..." className="form-control" /> */}
-              </div>
+              </select> 
+                 <input type="text" id="searchInput" placeholder="Search..." className="form-control" /> 
+              </div> */}
 
               <div className="vs-mb">
                 {data.address ? (
