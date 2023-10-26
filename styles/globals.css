@@ -833,6 +833,10 @@ display: none;
   grid-gap: 10px;
  
 }
+.topNftButton
+{
+  margin-top:40px;
+}
 }
 
 @media (max-width: 820px) {
@@ -847,7 +851,13 @@ display: none;
   {
     display: block;
   }
-
+  .green-btn
+  {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -872,10 +882,15 @@ display: none;
 @media (max-width: 480px) {
   .topNftButton
   {
-    gap: 20px;
+    gap: 10px;
     margin-top:20px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .green-btn
+  {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .vs-lg
   {
@@ -892,9 +907,21 @@ display: none;
 
 }
 
-@media (max-width: 375px) {
- 
+@media (max-width: 360px) {
+  .topNftButton
+  {
+    gap: 10px;
+    margin-top:20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .green-btn
+  {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
+
 /* Responsive pages  */
 
 @media (max-width: 1299px){
